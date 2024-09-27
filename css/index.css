@@ -6,17 +6,21 @@ body {
 header {
   height: 85px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background: #000;
   box-shadow: 0 -8px 26px #ff9800;
   padding: 0 20px;
-  margin: -8px;
+  margin: -8px -8px 0 -8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.nav_links {
+nav {
   display: flex;
-  gap: 100px;
+  align-items: center;
 }
 
 .logo_content {
@@ -28,6 +32,7 @@ header {
 
 .logo_content h1 {
   font-size: 30px;
+  padding-right: 475px;
 }
 
 .logo {
@@ -36,64 +41,57 @@ header {
   border-radius: 50%;
 }
 
-.nav_links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
+ul {
+  display: flex;
+  gap: 100px;
+  list-style-type: none;
 }
 
-.nav_links a:hover {
+ul li {
+  display: inline-flex;
+}
+
+ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul a:hover {
   color: #ff9800;
 }
 
-#overview {
-  margin-top: 50px;
+.intro {
+  margin-top: 100px;
 }
 
-table {
-  width: 1100px;
-  border-collapse: collapse;
-  margin: 20px auto 0 auto;
+img {
+  height: 250px;
+  width: 250px;
 }
 
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-th {
-  background-color: #f2f2f2;
-  text-align: left;
-}
-
-td {
-  text-align: left;
-}
-
-#devices ul {
+.mobile-categories {
   display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 120px;
 }
 
-#devices ul li {
-  margin: 20px;
-  flex-basis: calc(25% - 40px);
-  box-sizing: border-box;
+.mobile-categories a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3em;
 }
 
-#devices div {
-  text-align: center;
+.mobile-categories img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
-#devices img {
-  max-width: 150px;
-  height: auto;
-  margin: 10px 0;
+.reviews {
+  margin-top: 74px;
 }
 
 footer {
@@ -136,7 +134,6 @@ footer .social-icons a {
 footer .copyright {
   color: #777;
   font-size: 0.8em;
-  margin-top: 10px;
 }
 
 .footer-flex {

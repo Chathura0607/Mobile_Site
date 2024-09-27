@@ -1,12 +1,10 @@
 body {
   font-family: "Times New Roman", Times;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-img {
-  height: 250px;
-  width: 250px;
-}
 .container {
   line-height: 1.6;
   max-width: 1200px;
@@ -15,42 +13,61 @@ img {
 }
 
 header {
-  background-color: #f8f8f8;
+  height: 85px;
+  display: flex;
+  background-color: #080808;
   padding: 10px 0;
+  box-shadow: 0 -8px 26px #ff9800;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.nav_links {
+  display: flex;
+  gap: 150px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav_links a:hover {
+  color: #ff9800;
+}
+
+#home {
+  margin-left: 16px;
+  padding-right: 25%;
+}
+
 header h1 {
   font-size: 2em;
   margin: 0;
 }
-nav ul {
-  list-style-type: none;
-  font-size: 1.2em;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
-nav ul li {
-  display: inline;
-  margin: 0 50px;
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-nav a {
-  text-decoration: none;
-  color: #000;
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
 }
-.mobile-categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+
+td {
+  text-align: left;
 }
-.mobile-categories a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.3em;
-}
-.mobile-categories img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
+
 footer {
   background-color: #080808;
   padding: 15px 0;
@@ -58,28 +75,35 @@ footer {
   text-align: center;
   font-size: 1em;
 }
+
 footer img {
   width: 100px;
   height: 100px;
 }
+
 footer p {
   margin: 5px 0;
   font-size: 0.9em;
 }
+
 footer a {
   color: #ccc;
   text-decoration: none;
 }
+
 footer a:hover {
   color: #ff9800;
 }
+
 footer .social-icons {
   margin: 10px 0;
 }
+
 footer .social-icons a {
   margin: 0 10px;
   font-size: 1.3em;
 }
+
 footer .copyright {
   color: #777;
   font-size: 0.8em;
@@ -97,4 +121,18 @@ footer .copyright {
 .footer-item {
   text-align: center;
   flex: 1;
+}
+
+.sketchfab-embed-wrapper {
+  margin: 20px 0;
+}
+
+.sketchfab-embed-wrapper iframe {
+  width: 728px;
+  height: 410px;
+  border: none;
+}
+
+.spec-table td {
+  vertical-align: top;
 }
