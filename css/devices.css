@@ -42,7 +42,7 @@ header {
 .nav-links a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease;
   border-radius: 5px;
@@ -197,7 +197,8 @@ footer {
   padding: 15px 0;
   color: #ccc;
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 footer img {
@@ -207,7 +208,7 @@ footer img {
 
 footer p {
   margin: 5px 0;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 footer a {
@@ -225,12 +226,12 @@ footer .social-icons {
 
 footer .social-icons a {
   margin: 0 10px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 footer .copyright {
   color: #777;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   margin-top: 10px;
 }
 
@@ -245,18 +246,4 @@ footer .copyright {
 .footer-item {
   text-align: center;
   flex: 1;
-}
-
-.sketchfab-embed-wrapper {
-  margin: 20px 0;
-}
-
-.sketchfab-embed-wrapper iframe {
-  width: 728px;
-  height: 410px;
-  border: none;
-}
-
-.spec-table td {
-  vertical-align: top;
 }

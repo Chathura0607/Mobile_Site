@@ -1,0 +1,185 @@
+@media (max-width: 1200px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  #overview {
+    margin-top: 140px;
+    padding: 15px;
+  }
+
+  #about {
+    padding: 15px;
+  }
+
+  #devices ul {
+    gap: 15px;
+  }
+
+  footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  #overview {
+    margin-top: 140px;
+    padding: 15px;
+  }
+
+  #about {
+    padding: 15px;
+  }
+
+  #devices ul {
+    gap: 15px;
+  }
+
+  footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  #overview {
+    margin-top: 160px;
+    padding: 10px;
+  }
+
+  #about {
+    padding: 10px;
+  }
+
+  #devices ul {
+    gap: 15px;
+  }
+
+  footer .social-icons a {
+    font-size: 1.1rem;
+  }
+
+  footer .copyright {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  #overview {
+    margin-top: 180px;
+    padding: 10px;
+  }
+
+  #about {
+    padding: 10px;
+  }
+
+  #devices ul {
+    gap: 10px;
+  }
+
+  footer .social-icons a {
+    font-size: 1rem;
+  }
+
+  footer .copyright {
+    font-size: 0.6rem;
+  }
+
+  a.button {
+    font-size: 0.875rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  #overview,
+  #about {
+    padding: 15px;
+  }
+
+  #overview h2,
+  #about h2 {
+    font-size: 1.5rem;
+  }
+
+  #overview p,
+  #about td {
+    font-size: 0.5625rem;
+  }
+
+  #devices ul li {
+    width: 150px;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+
+  footer .social-icons a {
+    font-size: 0.6875rem;
+  }
+}
