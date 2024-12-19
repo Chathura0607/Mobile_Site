@@ -1,97 +1,152 @@
 body {
-  font-family: "Times New Roman", Times;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  height: 85px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: #000;
-  box-shadow: 0 -8px 26px #ff9800;
-  padding: 0 20px;
-  margin: -8px -8px 0 -8px;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  background: #000;
+  box-shadow: 0 -8px 26px #ff9800;
+  color: #fff;
 }
 
-nav {
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo-container {
   display: flex;
   align-items: center;
 }
 
-.logo_content {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: #ff9800;
-}
-
-.logo_content h1 {
-  font-size: 30px;
-  padding-right: 475px;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
   border-radius: 50%;
 }
 
-ul {
-  display: flex;
-  gap: 100px;
-  list-style-type: none;
+.logo-container:hover .logo-image {
+  transform: rotate(360deg);
 }
 
-ul li {
-  display: inline-flex;
-}
-
-ul a {
-  color: #fff;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff9800;
   text-decoration: none;
-  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
-ul a:hover {
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.nav-links a:hover {
   color: #ff9800;
 }
 
 .intro {
-  margin-top: 100px;
-}
-
-img {
-  height: 250px;
-  width: 250px;
+  margin-top: 120px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: #555;
 }
 
 .mobile-categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 200px;
-  margin-top: 120px;
+  gap: 40px;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
 }
 
-.mobile-categories a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.3em;
+.mobile-categories article {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mobile-categories article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-categories img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.mobile-categories p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.mobile-categories article a {
+  text-decoration: none;
 }
 
 .reviews {
-  margin-top: 74px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: #555;
 }
 
 footer {
@@ -147,4 +202,54 @@ footer .copyright {
 .footer-item {
   text-align: center;
   flex: 1;
+}
+
+button,
+a.button {
+  display: inline-block;
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .logo_content h1 {
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+  ul {
+    gap: 40px;
+  }
+
+  ul a {
+    font-size: 16px;
+  }
+
+  .mobile-categories {
+    gap: 20px;
+  }
+
+  .mobile-categories article {
+    width: 180px;
+  }
+
+  .intro,
+  .reviews {
+    padding: 15px;
+    font-size: 1em;
+  }
 }
